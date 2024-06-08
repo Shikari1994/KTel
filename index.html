@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>К Телеком</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+ <link rel="stylesheet" href="./css/owl.theme.default.css">
+</head>
+<body>
+
+    <div class="container">
+
+
+    <header class="header">
+        <a class="header-logo" href="/" >
+            <img
+            class=""
+            src="./images/logo.png"
+            alt="KTelekom Logo"
+            width="147" height="36" loading="lazy"
+            />
+        </a>
+    </header>
+
+<!-- баннер -->
+
+    <main>
+        <section class="banner">
+            <!-- <h2 class="visualy-hiden"></h2> -->
+            <ul class="banner-list">
+                <div class="banner-item">
+                  <div class="banner-card ">
+                    <div class="banner-card-body">
+                        <h3 class="banner-card-title">
+                            Экономия нервов и денег<br>
+                             — интернет К-Телеком
+                        </h3>
+                        <div class="banner-card-description">
+                            <p>• 5 тарифов для многоквартирных и 4 для частных домов<br>
+                                • безлимит подключенных устройств<br>
+                                • комфортная поддержка 24/7
+                                </p>
+                        </div>
+                        <a href="/" class="banner-card-button button transparent">Подробнее</a>
+                    </div>
+                    
+                 <div class="images">
+
+                    <img 
+                    src="./images/main pic.png" 
+                    alt="laptop and router"
+                     class="banner-card-image"
+                     width="436" height="314.34" loading="lazy"/>
+
+                 </div>
+
+                </div>
+            </div>
+
+            
+            </ul>
+        </main>
+
+        <!-- карусель -->
+        <div class="plans">
+            <section id="slider">
+                
+                  <h1 class="glav"><b>Тарифные планы</b></h1>
+                    <div class="slider">
+                              <div class="owl-carousel">
+                                  <div class="slider-card">
+                                     
+                                      <h3 class="T1">Мои клик</h3>
+                                      <p class="T2">Скорость интернета </p>
+                                      <p class="T3">до 40 Мбит/с</p>
+                                      <p class="T4">Отличный вариант для пенсионеров,<br>
+                                         выполнения определенных задач и работе<br> с файлами различных размеров.</p>
+                                         <label class="T5">
+                                            <input type="checkbox" name="tv-option" value="tv"> ТВ + 100 ₽
+                                          </label>
+                                          <p class="T6">(пакет “Базовый”)</p>
+                                          <p class="T7">399 ₽ <span class="T7_1">в месяц</span></p>
+                                          <p class="T8">*итоговая цена зависит от варианта оплаты и<br>
+                                            пакета ТВ при необходимости</p>
+                                          <button class="T9" onclick="changeColorAndText(this)">Выбрать тариф</button>
+                                  </div>
+        
+                                  <div class="slider-card">
+                                     
+                                      <h3 class="T1">Резвыи клик</h3>
+                                      <p class="T2">Скорость интернета </p>
+                                      <p class="T3">80-100 Мбит/с</p>
+                                      <p class="T4">Отличный вариант для всей семьи.<br>
+                                         Общайтесь в соцсетях и смотрите<br>
+                                          любимые фильмы и сериалы!
+                                    </p>
+                                    <label class="T5">
+                                        <input type="checkbox" name="tv-option" value="tv"> ТВ + 100 ₽
+                                      </label>
+                                      <p class="T6">(пакет “Базовый”)</p>
+                                      <p class="T7">449 ₽ <span class="T7_1">в месяц</span></p>
+                                      <p class="T8">*итоговая цена зависит от варианта оплаты и<br>
+                                         пакета ТВ при необходимости</p>
+                                      <button class="T9" onclick="changeColorAndText(this)">Выбрать тариф</button>
+                                  </div>
+        
+                                  <div class="slider-card">
+                                     
+                                    <h3 class="T1">Мои клик</h3>
+                                    <p class="T2">Скорость интернета </p>
+                                    <p class="T3">до 40 Мбит/с</p>
+                                    <p class="T4">Отличный вариант для пенсионеров,<br>
+                                       выполнения определенных задач и работе<br> с файлами различных размеров.</p>
+                                       <label class="T5">
+                                          <input type="checkbox" name="tv-option" value="tv"> ТВ + 100 ₽
+                                        </label>
+                                        <p class="T6">(пакет “Базовый”)</p>
+                                        <p class="T7">399 ₽ <span class="T7_1">в месяц</span></p>
+                                        <p class="T8">*итоговая цена зависит от варианта оплаты и<br>
+                                          пакета ТВ при необходимости</p>
+                                        <button class="T9" onclick="changeColorAndText(this)">Выбрать тариф</button>
+                                </div>
+                                  
+                              </div>
+                          </div>
+                
+            </div>
+
+
+
+
+            
+            <div class="forma">
+
+        
+                <h1 class="first">Подключиться просто!</h1>
+    <div class="button-container">
+        <button onclick="handleClick('Интернет')">Интернет</button>
+        <button onclick="handleClick('Интернет + ТВ')">Интернет + ТВ</button>
+        <button onclick="handleClick('Телефония')">Телефония</button>
+        <button onclick="handleClick('Видеонаблюдение')">Видеонаблюдение</button>
+    </div>
+    <form>
+        <div class="form-container">
+            <input type="text" placeholder="Имя" required >
+            <input type="tel" placeholder="Номер телефона" required>
+            <button type="submit">Отправить</button>
+        </div>
+        <div class="consent-container">
+            <input type="radio" id="consent" name="consent" required>
+            <label for="consent">Я соглашаюсь на условия <a href="your-link-here" class="underline-link">обработки данных</a></label>
+        </div>
+    </form>
+
+    <script>
+        function handleClick(service) {
+            alert('Вы выбрали: ' + service);
+        }
+    </script>
+
+</div>
+         
+
+    
+    <footer>
+        
+        <img src="./images/logo.png" alt="Logo" class="logo">
+        <p class="text-foot">© 2018–2022 ООО «К-Телеком»</p>
+        <div class="social-icons">
+            <a href="link1">
+                <img src="./icons/inst.png" alt="Social 1" class="icon">
+            </a>
+            <a href="link2">
+                <img src="./icons/youtube.png" alt="Social 2" class="icon">
+            </a>
+            <a href="link3">
+                <img src="./icons/vk.png" alt="Social 3" class="icon">
+            </a>
+        </div>
+      
+    </footer>
+    <script src="./js/jQuery.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
+
+
+
+
+</div>
+
+</body>
+</html>
+
