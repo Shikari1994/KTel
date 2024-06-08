@@ -63,7 +63,7 @@ main {
 .plans {
   height: 556px;
 
-  margin-top: 52px;
+  margin-top: 0px;
 }
 .forma {
   border-radius: 20px;
@@ -71,12 +71,12 @@ main {
   max-width: 900px;
   height: 341px;
   background-color: #F2F6F8;
-  margin-top: 52px;
+  margin-top: 40px;
 }
 footer {
   height: 97px;
   background-color: #adb5bd;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 /* Медиа запросы по разрешениям */
@@ -117,6 +117,7 @@ footer {
       max-width: 100%;
       padding: 0 5px;
   }
+ 
 }
 
 
@@ -386,6 +387,11 @@ margin-bottom: 100px;
   color: #C81059;
 }
 
+
+
+
+
+
 /* Стили формы */
 /* .forma {
   
@@ -476,7 +482,7 @@ margin-bottom: 100px;
 
 
 @media (max-width: 740px) {
-  .form-container, .consent-container {
+  .form-container {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
@@ -486,6 +492,14 @@ margin-bottom: 100px;
     width: 100%;
     margin-right: 0;
   }
+  .button-container {
+    display: flex;
+    margin-left: -20px;
+    align-items: center;
+    justify-content: center;
+  margin-right: 10px;
+  }
+
 
   .consent-container input {
     padding-left: 0;
@@ -502,7 +516,6 @@ footer {
   background-color: #ffffff;
   margin-top: 20px;
   box-sizing: border-box;
-  
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 40px;
@@ -537,8 +550,9 @@ footer {
 
 @media (max-width: 768px) {
   footer {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    
+    align-items: center; /* Выравниваем элементы по центру */
     padding: 20px;
   }
 
@@ -551,13 +565,24 @@ footer {
     margin-left: 0;
   }
 
+  .text-foot {
+    margin-top: 5px; /* Добавляем отступ сверху для text-foot */
+  }
+
   .icon {
     width: 30px;
     height: 30px;
-   
   }
 
- 
+.logo, .text-foot {
+  flex-direction: column; 
+}
+
+  .social-icons {
+    justify-self: end;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 1000px) {
